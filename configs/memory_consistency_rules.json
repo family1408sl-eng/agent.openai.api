@@ -1,0 +1,10 @@
+{
+  "agent_id": "agent.openai.api",
+  "entry_types": [
+    "method",
+    "object",
+    "source"
+  ],
+  "deprecated_terms": [],
+  "conflict_patterns": []
+}

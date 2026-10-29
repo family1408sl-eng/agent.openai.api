@@ -1,0 +1,50 @@
+{
+  "agent_id": "agent.openai.api",
+  "require_local_source_pointer": true,
+  "require_copyable_path_in_wiki_content": true,
+  "inject_copyable_block": true,
+  "require_none_reason": true,
+  "forbid_directory_pointer": true,
+  "default_source_root": "workspace/wiki-sources",
+  "provenance_fields": [
+    "local_source_path",
+    "local_source_kind",
+    "local_source_status",
+    "local_source_reason"
+  ],
+  "allowed_local_source_kinds": [
+    "source_of_truth",
+    "generated_from",
+    "request_source",
+    "operation_bundle",
+    "none"
+  ],
+  "allowed_local_source_statuses": [
+    "available",
+    "generated",
+    "redacted",
+    "external_only",
+    "none"
+  ],
+  "require_existing_file_for_statuses": [
+    "available",
+    "generated",
+    "redacted"
+  ],
+  "forbidden_path_segments": [
+    ".env",
+    "cookies",
+    "credentials",
+    "secrets",
+    "sessions",
+    "tokens"
+  ],
+  "forbidden_local_source_content": [
+    "secrets",
+    "tokens",
+    "credentials",
+    "raw_private_chats",
+    "raw_private_documents_without_confirmation",
+    "bulky_runtime_cache"
+  ]
+}

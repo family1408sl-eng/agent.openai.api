@@ -1,0 +1,46 @@
+# Local runtime cache
+.agent-memory/
+
+# Memory outbox runtime requests
+workspace/memory/outbox/*.request.md
+workspace/memory/outbox/*.tmp
+workspace/memory/*.context.md
+workspace/memory/memory_consistency_report.json
+workspace/memory/memory_consistency_report.md
+workspace/memory/structured-memory-source-repair.json
+workspace/memory/structured-memory-repair-queue.json
+workspace/memory/structured/*.json
+workspace/memory/structured/*.md
+!workspace/memory/structured/.gitkeep
+
+# Library runtime/search indexes
+workspace/libraries/indexes/*
+!workspace/libraries/indexes/.gitkeep
+workspace/libraries/tmp/
+workspace/libraries/raw/
+
+# Wiki local source scratch/private material
+workspace/wiki-sources/tmp/
+workspace/wiki-sources/raw/
+workspace/wiki-sources/private/
+
+# Python/runtime noise
+__pycache__/
+.pytest_cache/
+
+# Local secrets
+.env
+*.env
+!secrets.required.env.example
+
+# Private API data and local runtime
+workspace/private_artifacts/
+workspace/raw/
+workspace/tmp/
+workspace/logs/
+workspace/backups/
+*.log
+*.pem
+*.key
+*.p12
+*.pfx

@@ -1,0 +1,17 @@
+{
+  "agent_id": "agent.openai.api",
+  "wiki_libraries_root": "homepage/codex/memory/agent.openai.api/libraries",
+  "local_index_dir": "workspace/libraries/indexes",
+  "default_export_policy": "route_map_only",
+  "libraries": [],
+  "rules": {
+    "flat_library_pages": true,
+    "require_index_page": true,
+    "require_version_suffix": true,
+    "require_supersedes_for_replacements": true,
+    "require_provenance": true,
+    "raw_files_in_wiki": false,
+    "agent_memory_full_library_export": false,
+    "requires_memory_consistency_gate": true
+  }
+}

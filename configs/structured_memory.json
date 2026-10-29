@@ -1,0 +1,48 @@
+{
+  "agent_id": "agent.openai.api",
+  "enabled": false,
+  "description": "Enable collections when this agent needs nested Wiki memory pages.",
+  "collections": [],
+  "example_collection": {
+    "id": "document_groups",
+    "type": "document_type_rules",
+    "wiki_root": "homepage/codex/memory/agent.openai.api/methods/document-groups",
+    "supported_wiki_root_profile": "agent-openai-api-memory-methods",
+    "local_source_root": "docs/memory-drafts/document-groups",
+    "runtime_cache": "listed",
+    "include_source_files": [
+      "**/*.md"
+    ],
+    "exclude_source_files": [
+      "README.md",
+      "PUBLISH_PLAN.md",
+      "*.v*.md"
+    ],
+    "required_source_pointer_fields": [
+      "local_source_path",
+      "local_source_kind",
+      "local_source_status"
+    ],
+    "governance": {
+      "required": true,
+      "index_slug": "homepage/codex/memory/agent.openai.api/methods/index",
+      "log_supported_wiki_root_profile": "agent-openai-api-memory-log",
+      "versions_supported_wiki_root_profile": "agent-openai-api-memory-versions",
+      "require_latest_log": true,
+      "require_latest_version": true,
+      "require_latest_operation_covered_by_log": true,
+      "require_markdown_links_between_log_and_version": true,
+      "forbid_planned_governance_status_after_apply": true
+    }
+  },
+  "rules": {
+    "flat_entries_remain_allowed": true,
+    "use_structured_memory_for_rule_trees": true,
+    "require_local_source_pointers": true,
+    "repair_local_source_pointers_before_publish": true,
+    "require_governance_log_version_and_index": true,
+    "require_markdown_links_between_log_and_version": true,
+    "forbid_planned_governance_status_after_apply": true,
+    "external_agents_must_not_edit_agent_wiki_code": true
+  }
+}
